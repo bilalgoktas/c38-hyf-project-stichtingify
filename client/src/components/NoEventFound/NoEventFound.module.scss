@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 293px;
+  margin: 3rem auto 0 auto;
+
+  img {
+    box-sizing: content-box;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 201px;
+    aspect-ratio: 1;
+  }
+  .msg {
+    text-align: center;
+    line-height: 2rem;
+    color: var(--secondary-font-color);
+  }
+  .buttonWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    a.organizeEvent {
+      color: #fff;
+      background-color: var(--primary-button-color);
+      border-radius: 17px;
+      padding: 6px 12px;
+      font-size: 14px;
+      // height: 36px;
+    }
+  }
+}

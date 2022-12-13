@@ -1,0 +1,34 @@
+.profileDropdown {
+  position: relative;
+  height: 100%;
+}
+.profileDropdownButton {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 0 4px 0 12px;
+  &:hover,
+  &.selected {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  img {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+  }
+  .userName {
+    padding-left: 8px;
+  }
+}
+
+.caretWrapper {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}

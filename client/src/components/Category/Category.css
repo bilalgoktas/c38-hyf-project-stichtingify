@@ -1,0 +1,22 @@
+.category-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.category-item {
+  margin-right: 1rem;
+  color: rgb(111, 109, 109);
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.loading {
+  color: green;
+}
+
+.error-message {
+  color: #e75d36;
+}

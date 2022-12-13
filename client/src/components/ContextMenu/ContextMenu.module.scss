@@ -1,0 +1,30 @@
+$black-a08: rgba(0, 0, 0, 0.08);
+@mixin white-block-shadow {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.16);
+}
+
+.contextMenu {
+  background-color: white;
+  padding: 8px 0;
+  border-radius: 8px;
+  position: absolute;
+  min-width: 150px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  @include white-block-shadow;
+  button {
+    border: none;
+    display: block;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 4px 12px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    &:hover {
+      background-color: $black-a08;
+    }
+  }
+}

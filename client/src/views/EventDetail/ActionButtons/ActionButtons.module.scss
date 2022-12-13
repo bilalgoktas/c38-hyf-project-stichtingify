@@ -1,0 +1,30 @@
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  .publishBtn,
+  .attendBtn {
+    background-color: var(--primary-button-color);
+    color: #ffffff;
+  }
+  .editBtn {
+    background-color: var(--input-background-color);
+    color: var(--primary-font-color);
+  }
+
+  .deleteBtn {
+    background-color: #e75d361f;
+    color: #e75d36;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}

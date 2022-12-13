@@ -1,0 +1,124 @@
+.main-page {
+  height: 90vh;
+  display: flex;
+}
+
+.signUp-container {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid rgb(226, 225, 225);
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.signup-title-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.signup-title-box h1 {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+/* Loading */
+.signup-title-box h4 {
+  color: #4c9713;
+  margin-top: 10px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label {
+  margin-bottom: 8px;
+  color: rgb(99, 98, 98);
+  font-size: 14px;
+}
+
+.input-container input {
+  width: 350px;
+  border: none;
+  background-color: var(--input-background-color);
+  color: var(--primary-font-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input-container input:focus {
+  outline: none;
+  border-bottom: #4c9713 solid 2px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-container p {
+  display: none;
+  color: #e75d36;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.error-status input {
+  border: 1px solid #e75d36;
+}
+
+.error-status p {
+  display: block;
+  color: #e75d36;
+  margin-top: 12px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.login-message {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.login-message p {
+  margin-right: 10px;
+}
+
+.login-button {
+  color: green;
+}
+
+.signUp-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signUp-form button {
+  width: 5.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #4c9713;
+  color: white;
+  font-weight: 200;
+  align-self: flex-end;
+}
+
+.signUp-form button:focus {
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .signUp-container {
+    width: 90%;
+  }
+  .input-container input {
+    width: 100%;
+  }
+}

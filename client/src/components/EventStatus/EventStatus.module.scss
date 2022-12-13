@@ -1,0 +1,14 @@
+.status {
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 16px;
+  text-transform: capitalize;
+  &.published {
+    background-color: #468c111f;
+    color: #468c11;
+  }
+  &.draft {
+    background-color: #d7bb294d;
+    color: #8c780c;
+  }
+}

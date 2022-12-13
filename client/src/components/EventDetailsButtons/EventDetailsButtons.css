@@ -1,0 +1,36 @@
+.details-buttons {
+  margin-bottom: 30px;
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1.5px solid var(--primary-border-color);
+}
+
+.details-buttons .languageBtn {
+  list-style-type: none;
+  margin-right: 10px;
+  padding: 10px;
+  width: 80px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--secondary-font-color);
+  cursor: pointer;
+}
+
+.details-buttons .active {
+  color: var(--primary-font-color);
+  font-weight: bold;
+  border-bottom: 2.5px solid var(--primary-font-color);
+}
+
+@media (max-width: 992px) {
+  .details-buttons {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .details-buttons {
+    width: 100%;
+  }
+}

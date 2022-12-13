@@ -1,0 +1,90 @@
+$img-with: 125px;
+$more-button-with: 32px;
+
+.container {
+  display: flex;
+  padding: 12px 0 8px 0;
+  cursor: pointer;
+
+  img {
+    width: $img-with;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.titleAndDetail {
+  padding-left: 16px;
+  width: calc(100% - $img-with - $more-button-with);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-font-color);
+
+    span {
+      color: var(--secondary-font-color);
+    }
+  }
+}
+
+.attendeeAmount {
+  display: inline-block;
+}
+
+.dot {
+  padding-top: 4px;
+  width: 16px;
+  height: 16px;
+  color: var(--secondary-font-color);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: var(--secondary-font-color);
+}
+.more {
+  position: relative;
+}
+
+.moreButton {
+  width: $more-button-with;
+  height: $more-button-with;
+  color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
+@media (max-width: 600px) {
+  .titleAndDetail {
+    h3 {
+      -webkit-line-clamp: 1;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.delete-container p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.delete-container h3 {
+  margin-bottom: 15px;
+}
+
+.delete-container button {
+  width: 5.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 200;
+  justify-items: flex-end;
+  margin-left: 20px;
+  transition: background-color 0.5s;
+}
+
+.delete-buttons {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.delete-container button:last-child {
+  background-color: #e75d36;
+}
+
+.delete-container button:first-child {
+  border: 1px solid #4c9713;
+  color: #4c9713;
+  background-color: white;
+}
+
+.DeleteMsg {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.deleted,
+.loading {
+  color: #4c9713;
+}
+
+.error {
+  color: #e75d36;
+}

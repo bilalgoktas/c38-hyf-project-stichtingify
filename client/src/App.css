@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App[theme="light"] {
+  --body-background-color: #ffffff;
+  --input-background-color: #f5f5f5;
+  --primary-button-color: #468c11;
+  --secondary-button-color: #6c63ff;
+  --secondary-background-color: #e9f1e2;
+  --primary-font-color: #000000;
+  --primary-border-color: #e0e0e0;
+  --input-color-scheme: light;
+  --tertiary-background-color: #e6e6e6;
+  --datepicker-border-color: #ebebeb;
+  --datepicker-border-color-hover: #b3b3b3;
+  --notfound-background-color: #f5f5f5;
+  --filter-invert: invert(0);
+  --toggle-background-color: #ebebeb;
+}
+
+.App[theme="dark"] {
+  --body-background-color: #0f0f0f;
+  --input-background-color: #222222;
+  --primary-button-color: #29520a;
+  --secondary-button-color: #070080;
+  --secondary-background-color: #272727;
+  --primary-font-color: #ffffff;
+  --primary-border-color: #303030;
+  --input-color-scheme: dark;
+  --tertiary-background-color: #262626;
+  --datepicker-border-color: #303030;
+  --datepicker-border-color-hover: #b3b3b3;
+  --notfound-background-color: #262626;
+  --toggle-background-color: #404040;
+  --filter-invert: invert(1);
+}
+
+.App {
+  --icon-color: #468c11;
+  --secondary-font-color: #666666;
+  --delete-color: #ff0000;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--body-background-color);
+  color: var(--primary-font-color);
+}

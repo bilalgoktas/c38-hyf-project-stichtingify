@@ -1,0 +1,46 @@
+.datePicker {
+  min-width: 10rem;
+  height: 38px;
+  margin-right: 1rem;
+  padding: 0 10px;
+  text-align: start;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.1s ease;
+  border: 1px solid var(--datepicker-border-color);
+
+  &:hover {
+    border: 1px solid var(--datepicker-border-color-hover);
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 500;
+    color-scheme: var(--input-color-scheme);
+    width: 100%;
+    text-align: start;
+    border-right: 1px solid #cccccc;
+  }
+
+  svg {
+    width: 24px;
+    box-sizing: content-box;
+    padding-left: 8px;
+    filter: invert(99%) sepia(0%) saturate(1086%) hue-rotate(182deg)
+      brightness(83%) contrast(93%);
+    &:hover {
+      filter: invert(68%) sepia(0%) saturate(1117%) hue-rotate(199deg)
+        brightness(90%) contrast(87%);
+    }
+  }
+
+  &.selected {
+    background-color: #f0f6ec;
+  }
+}
